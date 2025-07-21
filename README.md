@@ -1,4 +1,4 @@
-# Make More: Character-Level Language Model
+# Make More: Character-Level Language Modeling Project
 
 ## 1. Introduction
 
@@ -66,8 +66,6 @@ tory.
 - Tensor Manipulations
 
 ### Model Architecture
-
-<img src="Multi_Layer_perceptron/Dev/images/img.png">
 
 - **Input**: Block of 3 character indices → Embeddings → Concatenated vector
 - **Layer 1**: Fully connected layer (6D → 100D) with tanh
@@ -141,8 +139,6 @@ This gives deep insight into how gradients flow and how weight updates occur wit
 
 ### Design Rationale
 
-<img src="Multi_Layer_perceptron/Dev/images/wavenet.png">
-
 - Inputs processed in bigram/trigram structure
 - Mimics 1D convolutional behavior
 - Maintains temporal locality before full flattening
@@ -153,7 +149,50 @@ This gives deep insight into how gradients flow and how weight updates occur wit
 
 ---
 
-## 7. How Make More Relates to ChatGPT
+## 7. Running the Project Locally
+
+To run any version of this project on your machine:
+
+### 📁 Folder Structure
+
+```
+Multi_Layer_perceptron/
+└── Dev/
+    ├── Images/
+    │   └── img.png
+    ├── makemoreV1.0.ipynb
+    ├── makemoreV2.0.ipynb
+    ├── makemoreV3.0.ipynb
+    ├── makemoreV3.1.ipynb
+    ├── makemoreV4.0.ipynb
+    ├── makemoreV5.0.ipynb
+    └── names.txt
+```
+
+### ✅ Instructions
+
+1. Clone the repository or download the project folder.
+2. Ensure you have Python 3.8+ and Jupyter installed. You can install dependencies using:
+   ```bash
+   pip install torch notebook matplotlib
+   ```
+3. Launch Jupyter:
+   ```bash
+   jupyter notebook
+   ```
+4. Navigate to `Multi_Layer_perceptron/Dev/` and open the notebook you want to run:
+   - **makemoreV1.0** → Bigram Model
+   - **makemoreV2.0** → Basic MLP
+   - **makemoreV3.0** → Manual Backprop
+   - **makemoreV3.1** → BatchNorm + Kaiming
+   - **makemoreV4.0** → PyTorch `nn.Module` Design
+   - **makemoreV5.0** → WaveNet-Inspired Architecture
+
+Make sure `names.txt` is in the same directory as the notebooks.
+
+---
+
+## 8. How Make More Relates to ChatGPT
 
 | Feature       | Make More                        | ChatGPT                              |
 | ------------- | -------------------------------- | ------------------------------------ |
@@ -172,7 +211,7 @@ This gives deep insight into how gradients flow and how weight updates occur wit
 
 ---
 
-## 8. Final Outputs
+## 9. Final Outputs
 
 ```
 carman.
@@ -194,7 +233,7 @@ These names are generated based on learned patterns, not memorized data.
 
 ---
 
-## 9. Conclusion & Learning Outcomes
+## 10. Conclusion & Learning Outcomes
 
 ### What Was Learned
 
