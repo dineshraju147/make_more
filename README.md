@@ -67,7 +67,7 @@ tory.
 
 ### Model Architecture
 
-<img src="images/img.png">
+<img src="Multi_Layer_perceptron/Dev/images/img.png">
 
 - **Input**: Block of 3 character indices → Embeddings → Concatenated vector
 - **Layer 1**: Fully connected layer (6D → 100D) with tanh
@@ -141,7 +141,7 @@ This gives deep insight into how gradients flow and how weight updates occur wit
 
 ### Design Rationale
 
-<img src="images/wavenet.png">
+<img src="Multi_Layer_perceptron/Dev/images/wavenet.png">
 
 - Inputs processed in bigram/trigram structure
 - Mimics 1D convolutional behavior
