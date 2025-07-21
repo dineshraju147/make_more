@@ -67,6 +67,8 @@ tory.
 
 ### Model Architecture
 
+<img src="images/img.png">
+
 - **Input**: Block of 3 character indices → Embeddings → Concatenated vector
 - **Layer 1**: Fully connected layer (6D → 100D) with tanh
 - **Layer 2**: Fully connected layer (100D → 27D logits)
@@ -138,6 +140,8 @@ This gives deep insight into how gradients flow and how weight updates occur wit
   - `Sequential` logic wrapper
 
 ### Design Rationale
+
+<img src="images/wavenet.png">
 
 - Inputs processed in bigram/trigram structure
 - Mimics 1D convolutional behavior
